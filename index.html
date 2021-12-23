@@ -16,7 +16,12 @@
 			<span class="b">叶宝的</span>
 			<span class="c">专属圣诞树</span>
 			</h1>
-			<audio loop src="audio/圣诞快乐(纯音乐)-曼曼的钢琴城堡.mp3" id="audio" autoplay preload="auto">该浏览器不支持audio属性</audio>
+			<audio preload autoplay loop id="audio">
+			     <source src="audio/圣诞快乐(纯音乐)-曼曼的钢琴城堡.mp3" type="audio/mpeg">
+			</audio>
+			<!-- <audio preload autoplay loop id="audio">
+			     <source src="audio/f272_a2ea_22c7_17598eec1d0126e767258e8f2e030af5.mp3" type="audio/mpeg">
+			</audio> -->
 		<canvas id="c">
 
 			<script>
@@ -109,6 +114,21 @@
 				}, 1)
 
 				// end of submission //
+			</script>
+			
+			<script type="text/javascript">
+			    window.onload = function(){
+			             setInterval("toggleSound()",100);
+			        }
+			
+			    function toggleSound() {
+			                var music = document.getElementById("audio");//获取ID  
+			                    
+			                if (music.paused) { //判读是否播放  
+			                    music.paused=false;
+			                    music.play(); //没有就播放 
+			                }    
+			        }
 			</script>
 
 	</body>
