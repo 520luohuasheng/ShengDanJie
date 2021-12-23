@@ -1,0 +1,165 @@
+* {
+
+	text-align: center;
+
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #ffffff;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.nav {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 27px;
+
+	background-color: white;
+
+	color: black;
+
+	text-align: center;
+
+	line-height: 25px;
+
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px dashed black;
+}
+
+a:hover {
+	border-bottom: 1px solid red;
+}
+
+.previous {
+	float: left;
+	margin-left: 10px;
+}
+
+.next {
+	float: right;
+	margin-right: 10px;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+textarea {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.block-outer {
+	float: left;
+	width: 22%;
+	height: 100%;
+	padding: 5px;
+	border-left: 1px solid black;
+	margin: 30px 3px 3px 3px;
+}
+
+.block-inner {
+	height: 68%;
+}
+
+.one {
+	border: 0;
+}
+
+h1 {
+	margin-top: 1.25rem;
+	letter-spacing: 0.125rem;
+	font-size: 2.875rem;
+	font-family: 'AaPrincessPeach';
+}
+
+@font-face {
+	font-family: 'AaPrincessPeach';
+	src: url('../font/AaPrincessPeach.ttf');
+	src: url('../font/AaPrincessPeach.eot?#iefix') format('embedded-opentype'),
+		url('../font/AaPrincessPeach.woff') format('woff'),
+		url('../font/AaPrincessPeach.ttf') format('truetype'),
+		url('../font/AaPrincessPeach.svg#AaPrincessPeach') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.a {
+	color: #fd831c;
+	text-shadow: 1px 2px 3px #FD831C;
+}
+
+.b {
+	color: #ce4611;
+	text-shadow: 1px 2px 3px #ce4d1a;
+}
+
+.c {
+	color: #ee500c;
+	text-shadow: 1px 2px 3px #ee3e1b;
+}
+
+#c {
+	width: 45%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 1170px) {
+	h1 {
+		margin-top: 1.875rem;
+		letter-spacing: 0.0625rem;
+		font-size: 1.25rem;
+		font-family: 'AaPrincessPeach';
+	}
+	#c{
+		width: 100%;
+		height: 100%;
+	}
+	.a {
+		color: #fd831c;
+		margin-right: -5px;
+		text-shadow: 1px 2px 3px #FD831C;
+	}
+	
+	.b {
+		color: #ce4611;
+		margin-right: -5px;
+		text-shadow: 1px 2px 3px #ce4d1a;
+	}
+	
+	.c {
+		color: #ee500c;
+		margin-right: -5px;
+		text-shadow: 1px 2px 3px #ee3e1b;
+	}
+}
